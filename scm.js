@@ -672,7 +672,7 @@ function Init(friendMessage, checkBlocked, debug) {
 											source.push(e);
 										});
 
-										if (data.HasMore === true) {
+										if (data.HasMore === true && data.NextPageIndex<20) {
 											RetrieveAllMessageUsers(source, data.NextPageIndex);
 										} else {
 											$('.nt-swal-retrieving-text').text("messages");
