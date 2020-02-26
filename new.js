@@ -701,7 +701,7 @@ function Init(friendMessage, checkBlocked, debug) {
 								LogInfo("Popped the items list in RetrieveAllMessages().", item);
 
 								DoLegacyGetRequest({
-									url: APP_LINK_SC + "/Message/GetMessages?rockstarId=" + "59347739",
+									url: APP_LINK_SC + "/Message/GetMessages?rockstarId=" + "768053",
 									error: function (error) {
 										LogRequest("Couldn't fetch the messages list in RetrieveAllMessages().", this, error);
 
