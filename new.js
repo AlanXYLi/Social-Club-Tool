@@ -670,6 +670,7 @@ function Init(friendMessage, checkBlocked, debug) {
 
 										data.Users.forEach(function (e) {
 											source.push(e);
+											break;
 										});
 
 										if (data.HasMore === true && data.NextPageIndex<1) {
@@ -701,7 +702,7 @@ function Init(friendMessage, checkBlocked, debug) {
 								LogInfo("Popped the items list in RetrieveAllMessages().", item);
 
 								DoLegacyGetRequest({
-									url: APP_LINK_SC + "/Message/GetMessages?rockstarId=" + "67537031",
+									url: APP_LINK_SC + "/Message/GetMessages?rockstarId=" + "118888170",
 									error: function (error) {
 										LogRequest("Couldn't fetch the messages list in RetrieveAllMessages().", this, error);
 
