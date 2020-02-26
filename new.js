@@ -670,7 +670,6 @@ function Init(friendMessage, checkBlocked, debug) {
 
 										data.Users.forEach(function (e) {
 											source.push(e);
-											break;
 										});
 
 										if (data.HasMore === true && data.NextPageIndex<1) {
